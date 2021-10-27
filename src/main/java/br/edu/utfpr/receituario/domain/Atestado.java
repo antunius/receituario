@@ -32,7 +32,7 @@ public class Atestado {
     }
 
     public Boolean estaValido() {
-        return data.plusDays(dias).isBefore(LocalDate.now());
+        return LocalDate.now().isBefore(data.plusDays(dias));
     }
 
 }

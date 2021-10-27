@@ -20,6 +20,6 @@ class AtestadoTest {
     @Test
     void estaValido() {
         Atestado atestado = new Atestado(5);
-        assertFalse(atestado.estaValido());
+        assertTrue(atestado.estaValido());
     }
 }
